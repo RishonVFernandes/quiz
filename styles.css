@@ -1,0 +1,269 @@
+:root{
+    --font-color:black;
+    --btn-color:#821131;
+    --label-color:#f1c08c;
+    --label-bg-color:#C7253E;
+}
+
+body {
+    background-image: url("backgroundPikachu.jpg");
+    background-color: rgb(255, 196, 0);
+    background-position: center;
+    background-repeat: no-repeat;
+    color: var(--font-color);
+    align-items: center;
+    /* font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; */
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+
+
+.heading {
+    font-size: 3rem;
+    font-weight: 500;
+    text-align: center;
+font-weight: 600;
+    margin: 0;
+}
+
+.heading > a{
+    color: black;
+}
+
+.quiz_interface {
+    padding-top: 40px;
+    width:70vw;
+    height: 70vh;
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    align-items: flex-end;
+
+}
+
+
+
+
+.quiz_section {
+    display: flex;
+    flex-direction: row;
+    justify-items: center;
+}
+
+
+.page {
+    display: none;
+}
+
+.score-page{
+    width: 100%
+}
+
+.btn_section {
+    padding: 10px;
+    display: flex;
+    justify-content: space-around;
+    /* width: 700px; */
+    gap: 20px;
+}
+
+a{
+    color: #f1c08c;
+    text-decoration: none;
+}
+
+
+input[type="radio"] {
+    display: none;
+}
+
+label {
+    display: block;
+    width: 100%;
+    height: 3rem;
+    font-size: 2rem;
+    font-weight: 500;
+    text-align: center;
+    margin-bottom: 10px;
+    background-color: var(--label-color);
+    cursor: pointer;
+    display: grid;
+    place-content: center;
+    border: 1px inset black;
+    font-family:monospace;
+
+    &:hover{
+        background-color: #f3d4b4;
+    }
+}
+
+input[type="radio"]:checked+label {
+    background-color: var(--label-bg-color);
+    color: var(--label-color);
+
+    &:hover{
+        color: #f3d4b4;
+    }
+
+}
+
+
+
+.question {
+    display: flex;
+    justify-content: space-between;
+}
+
+
+.image>img {
+    width: 200px;
+    height: 200px;
+    background-color: red;
+}
+
+.options {
+    width: 300px;
+    margin: 10px auto 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+
+
+.homePageBtn {
+    display: none;
+    width: 500px;
+}
+
+.hide{
+    visibility: hidden;
+}
+
+
+.entry {
+    font-size: 2rem;
+    font-weight: 700;
+}
+
+
+button {
+    background-color: var(--btn-color);
+    color: #F1D3B2;
+    border: none;
+    border-radius: 50px;
+    width: 300px;
+    height: 60px;
+    font-size: 30px;
+    cursor: pointer;
+    font-family: cursive;
+}
+
+.results{
+    display: none;
+}
+
+.results > ol > li{
+    height: 30px;
+    margin-left: 10px;
+}
+.results > ol > li > img{
+    width: 20px;
+    height: auto;
+    margin: auto;
+}
+
+.homePageBtn{
+    width:200px;
+}
+.score{
+    font-size: 25px;
+    font-weight: 900;
+    text-align: center;
+}
+
+
+.headImg{
+    width: 3rem;
+    
+}
+.hitmonchanImg{
+    margin-left: 40px;
+}
+.mewImg{
+    width: 4.5rem;
+    margin-right: 40px;
+}
+
+
+footer{
+    /* background-color: red; */
+    width: 100%;
+
+}
+@media screen and (max-width:412px) {
+    
+    body{
+        background-position: left;
+    }
+    .heading{
+        font-size: 2rem;
+    }
+
+    
+    .quiz_interface{
+        align-items: center;
+        height: 100vh;
+    }
+    .question{
+        display: block;
+        justify-content: center;
+    }
+    .entry{
+        font-size:16px;
+    }
+
+    .image>img{
+        width: 150px;
+        height: auto;
+        margin-block: 30px;
+    }
+    .image{
+        display: flex;
+        justify-content: center;
+    }
+    .options{
+        margin-bottom: 30px;
+    }
+    label{
+        width: 200px;
+        height: 25px;
+        font-size: 20px;
+    }
+
+    button{
+        width: 180px;
+        height: 35px;
+    
+        font-size: 1rem;
+    }
+    .btn_section{
+        /* width: 400px; */
+        flex-direction: column;
+        gap:15px;
+    }
+
+    
+    .headImg{
+        width: 1rem;
+        margin: 0;
+    }
+    .mewImg{
+        width: 1.5rem;
+    }
+
+    .page > li:nth-child(7){
+        margin-bottom: 100px;
+    }
+}

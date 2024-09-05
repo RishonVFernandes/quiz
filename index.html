@@ -1,0 +1,560 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>May I Choose You ? - Pokemon Quiz Website</title>
+    <link rel="stylesheet" href=".\styles.css">
+</head>
+
+<style>
+    .pokeball{
+        width:300px;
+        height:300px;
+        background-color: green;
+    }
+    .top{
+        background-color: red;
+        height: 50%;
+        border-radius: 1000px 1000px 0 0;
+    }
+    .bottom{
+        background-color: white;
+        height: 50%;
+        border-radius:0 0 1000px 1000px;
+
+    }
+    .small-ball{
+        border: 10px solid black;
+        
+    }
+</style>
+
+
+<body onload="return typeWriter();">
+    <main>
+        <div class="pokeball">
+            <div class="top"></div>
+            <div class="small-ball"></div>
+            <div class="bottom"></div>
+        </div>
+        <div class="heading">
+            <a href="index.html">
+                <img src="./images/mew.png" class="mewImg headImg" alt="">
+                    <div style="display:inline" id="heading"></div>
+                <img src="./images/hitmonchan.png" class="hitmonchanImg headImg" alt="">
+            </a>
+        </div>
+        <div class="quiz_interface">
+            <div class="quiz_section">
+                <form action="" class="page">
+                    <p class="entry">Guess the Pokemon by its description from the first 151 Pokemon Pokedex</p>
+
+                    <p class="entry" style="font-weight: 200; text-decoration: underline;">Rules</p>
+                    <li>There are a total of 20 questions</li>
+                    <li>You need to guess the pokemon in the image by reading th description of that Pokemon</li>
+                    <li>Before going to the next question ensure clicking on any one option</li>
+                    <li>Please dont leave anything unchecked</li>
+                    <li>After clicking on the answer , click on next button for next question</li>
+                </form>
+                <form action="" class="page">
+                    <div class="question">
+                        <p class="entry">1. From the time it is born, a flame burns at the tip of its tail. Its life
+                            would end if the flame were to go out.</p>
+
+                        <div class="image">
+                            <img src="./images/charmender.jpg" alt="">
+                        </div>
+                    </div>
+                    <div class="options">
+                        <input type="radio" name="question1" id="charmender" value="charmender">
+                        <label for="charmender">Charmender</label>
+
+                        <input type="radio" name="question1" id="moltress" value="moltress">
+                        <label for="moltress">Moltress</label>
+
+                        <input type="radio" name="question1" id="dragonite" value="dragonite">
+                        <label for="dragonite">Dragonite</label>
+                    </div>
+                </form>
+                <form action="" class="page">
+                    <div class="question">
+                        <p class="entry">2. Its scientific name is “Oddium Wanderus.” At night, it is said to walk
+                            nearly 1,000 feet on its two roots.
+                        </p>
+
+                        <div class="image">
+                            <img src="./images/oddish.png" alt="">
+                        </div>
+                    </div>
+                    <div class="options">
+                        <input type="radio" name="question2" id="vileplume" value="vileplume">
+                        <label for="vileplume">Vileplume</label>
+
+                        <input type="radio" name="question2" id="koffing" value="koffing">
+                        <label for="koffing">Koffing</label>
+
+                        <input type="radio" name="question2" id="oddish" value="oddish">
+                        <label for="oddish">Oddish</label>
+                    </div>
+                </form>
+                <form action="" class="page">
+                    <div class="question">
+                        <p class="entry">3. An extremely rare Pokémon that may evolve in a number of different ways
+                            depending on stimuli.
+                        </p>
+
+                        <div class="image">
+                            <img src="./images/eevee.png" alt="">
+                        </div>
+                    </div>
+                    <div class="options">
+                        <input type="radio" name="question3" id="mew" value="mew">
+                        <label for="mew">Mew</label>
+
+                        <input type="radio" name="question3" id="eevee" value="eevee">
+                        <label for="eevee">Eevee</label>
+
+                        <input type="radio" name="question3" id="bulbasaur" value="bulbasaur">
+                        <label for="bulbasaur">Bulbasaur</label>
+                    </div>
+                </form>
+                <form action="" class="page">
+                    <div class="question">
+                        <p class="entry">4. It moves while constantly hovering. It discharges Thunder Wave and so on
+                            from the units at its sides.</p>
+
+                        <div class="image">
+                            <img src="./images/magnemite.png" alt="">
+                        </div>
+                    </div>
+                    <div class="options">
+                        <input type="radio" name="question4" id="magnemite" value="magnemite">
+                        <label for="magnemite">Magnemite</label>
+
+                        <input type="radio" name="question4" id="jigglypuff" value="jigglypuff">
+                        <label for="jigglypuff">Jigglypuff</label>
+
+                        <input type="radio" name="question4" id="electrode" value="electrode">
+                        <label for="electrode">Electrode</label>
+                    </div>
+                </form>
+                <form action="" class="page">
+                    <div class="question">
+                        <p class="entry">5. It is said to emerge from darkness to steal the lives of those who
+                            become
+                            lost in mountains.
+                        </p>
+
+                        <div class="image">
+                            <img src="./images/gengar.png" alt="">
+                        </div>
+                    </div>
+                    <div class="options">
+                        <input type="radio" name="question5" id="gastly" value="gastly">
+                        <label for="gastly">Gastly</label>
+
+                        <input type="radio" name="question5" id="gengar" value="gengar">
+                        <label for="gengar">Gengar</label>
+
+                        <input type="radio" name="question5" id="shellder" value="shellder">
+                        <label for="shellder">Shellder</label>
+                    </div>
+                </form>
+                <form action="" class="page">
+                    <div class="question">
+                        <p class="entry">6. It does not like physical attacks very much. Instead, it freely uses
+                            extra-sensory powers to defeat foes.
+                        </p>
+
+                        <div class="image">
+                            <img src="./images/alakazam.png" alt="">
+                        </div>
+                    </div>
+                    <div class="options">
+                        <input type="radio" name="question6" id="alakazam" value="alakazam">
+                        <label for="alakazam">Alakazam</label>
+
+                        <input type="radio" name="question6" id="hypno" value="hypno">
+                        <label for="hypno">Hypno</label>
+
+                        <input type="radio" name="question6" id="jynx" value="jynx">
+                        <label for="jynx">Jynx</label>
+                    </div>
+                </form>
+                <form action="" class="page">
+                    <div class="question">
+                        <p class="entry">7. Its adorable appearance makes it popular as a pet. However, it is rare
+                            and
+                            difficult to find.
+                        </p>
+
+                        <div class="image">
+                            <img src="./images/clefairy.jpg" alt="">
+                        </div>
+                    </div>
+                    <div class="options">
+                        <input type="radio" name="question7" id="goldeen" value="goldeen">
+                        <label for="goldeen">Goldeen</label>
+
+                        <input type="radio" name="question7" id="vulpix" value="vulpix">
+                        <label for="vulpix">Vulpix</label>
+
+                        <input type="radio" name="question7" id="clefairy" value="clefairy">
+                        <label for="clefairy">Clefairy</label>
+                    </div>
+                </form>
+                <form action="" class="page">
+                    <div class="question">
+                        <p class="entry">8. Its high intelligence enables it to understand human speech. It likes to
+                            ferry people on its back.</p>
+
+                        <div class="image">
+                            <img src="./images/lapras.png" alt="">
+                        </div>
+                    </div>
+                    <div class="options">
+                        <input type="radio" name="question8" id="graveller" value="graveller">
+                        <label for="graveller">Graveller</label>
+
+                        <input type="radio" name="question8" id="lapras" value="lapras">
+                        <label for="lapras">Lapras</label>
+
+                        <input type="radio" name="question8" id="mr_mime" value="mr_mime">
+                        <label for="mr_mime">Mr. Mime</label>
+                    </div>
+                </form>
+                <form action="" class="page">
+                    <div class="question">
+                        <p class="entry">9. Its wings can carry this Pokémon close to an altitude of 4,600 feet. It
+                            blows out fire at very high temperatures.</p>
+
+                        <div class="image">
+                            <img src="./images/charizard.webp" alt="">
+                        </div>
+                    </div>
+                    <div class="options">
+                        <input type="radio" name="question9" id="dragonair" value="dragonair">
+                        <label for="dragonair">Dragonair</label>
+
+                        <input type="radio" name="question9" id="aerodactyl" value="aerodactyl">
+                        <label for="aerodactyl">Aerodactyl</label>
+
+                        <input type="radio" name="question9" id="charizard" value="charizard">
+                        <label for="charizard">Charizard</label>
+                    </div>
+                </form>
+                <form action="" class="page">
+                    <div class="question">
+                        <p class="entry">10. One of the legendary bird Pokémon. While it is flying, it makes
+                            crackling
+                            and snapping sounds.
+                        </p>
+
+                        <div class="image">
+                            <img src="./images/zapdos.png" alt="">
+                        </div>
+                    </div>
+                    <div class="options">
+                        <input type="radio" name="question10" id="zapdos" value="zapdos">
+                        <label for="zapdos">Zapdos</label>
+
+                        <input type="radio" name="question10" id="voltorb" value="voltorb">
+                        <label for="voltorb">Voltorb</label>
+
+                        <input type="radio" name="question10" id="articuno" value="articuno">
+                        <label for="articuno">Articuno</label>
+                    </div>
+                </form>
+                <form action="" class="page">
+                    <div class="question">
+                        <p class="entry">11. All it does is sleep during the daytime. At night, it patrols its
+                            territory
+                            with its eyes aglow.</p>
+
+                        <div class="image">
+                            <img src="./images/meowth.jpg" alt="">
+                        </div>
+                    </div>
+                    <div class="options">
+                        <input type="radio" name="question11" id="kakuna" value="kakuna">
+                        <label for="kakuna">Kakuna</label>
+
+                        <input type="radio" name="question11" id="paras" value="paras">
+                        <label for="paras">Paras</label>
+
+                        <input type="radio" name="question11" id="meowth" value="meowth">
+                        <label for="meowth">Meowth</label>
+                    </div>
+                </form>
+                <form action="" class="page">
+                    <div class="question">
+                        <p class="entry">12. The pattern on its belly appears to be a frightening face. Weak foes
+                            will
+                            flee just at the sight of the pattern.
+                        </p>
+
+                        <div class="image">
+                            <img src="./images/arbok.png" alt="">
+                        </div>
+                    </div>
+                    <div class="options">
+                        <input type="radio" name="question12" id="ekans" value="ekans">
+                        <label for="ekans">Ekans</label>
+
+                        <input type="radio" name="question12" id="arbok" value="arbok">
+                        <label for="arbok">Arbok</label>
+
+                        <input type="radio" name="question12" id="scyther" value="scyther">
+                        <label for="scyther">Scyther</label>
+                    </div>
+                </form>
+                <form action="" class="page">
+                    <div class="question">
+                        <p class="entry">13. There is a plant bulb on its back. When it absorbs nutrients, the bulb
+                            is
+                            said to blossom into a large flower.</p>
+
+                        <div class="image">
+                            <img src="./images/ivysaur.jpg" alt="">
+                        </div>
+                    </div>
+                    <div class="options">
+                        <input type="radio" name="question13" id="ivysaur" value="ivysaur">
+                        <label for="ivysaur">Ivysaur</label>
+
+                        <input type="radio" name="question13" id="venusaur" value="venusaur">
+                        <label for="venusaur">Venusaur</label>
+
+                        <input type="radio" name="question13" id="victreebel" value="victreebel">
+                        <label for="victreebel">Victreebel</label>
+                    </div>
+                </form>
+                <form action="" class="page">
+                    <div class="question">
+                        <p class="entry">14. It spreads its gorgeous wings widely to intimidate enemies. It races
+                            through the skies at Mach-2 speed.
+                        </p>
+
+                        <div class="image">
+                            <img src="./images/pidgeot.png" alt="">
+                        </div>
+                    </div>
+                    <div class="options">
+                        <input type="radio" name="question14" id="fearow" value="fearow">
+                        <label for="fearow">Fearow</label>
+
+                        <input type="radio" name="question14" id="pidgeotto" value="pidgeotto">
+                        <label for="pidgeotto">Pidgeotto</label>
+
+                        <input type="radio" name="question14" id="pidgeot" value="pidgeot">
+                        <label for="pidgeot">Pidgeot</label>
+                    </div>
+                </form>
+                <form action="" class="page">
+                    <div class="question">
+                        <p class="entry">15. It burrows through the ground at a shallow depth. It leaves raised
+                            earth in
+                            its wake, making it easy to spot.
+                        </p>
+
+                        <div class="image">
+                            <img src="./images/diglett.png" alt="">
+                        </div>
+                    </div>
+                    <div class="options">
+                        <input type="radio" name="question15" id="dugtrio" value="dugtrio">
+                        <label for="dugtrio">Dugtrio</label>
+
+                        <input type="radio" name="question15" id="diglett" value="diglett">
+                        <label for="diglett">Diglett</label>
+
+                        <input type="radio" name="question15" id="doduo" value="doduo">
+                        <label for="doduo">Doduo</label>
+                    </div>
+                </form>
+                <form action="" class="page">
+                    <div class="question">
+                        <p class="entry">16. Even though it is encased in a sturdy shell, the body inside is tender.
+                            It
+                            can't withstand a harsh attack.
+                        </p>
+
+                        <div class="image">
+                            <img src="./images/metapod.jpg" alt="">
+                        </div>
+                    </div>
+                    <div class="options">
+                        <input type="radio" name="question16" id="caterpie" value="caterpie">
+                        <label for="caterpie">Caterpie</label>
+
+                        <input type="radio" name="question16" id="butterfree" value="butterfree">
+                        <label for="butterfree">Butterfree</label>
+
+                        <input type="radio" name="question16" id="metapod" value="metapod">
+                        <label for="metapod">Metapod</label>
+                    </div>
+                </form>
+                <form action="" class="page">
+                    <div class="question">
+                        <p class="entry">17. When it retracts its long neck into its shell, it squirts out water
+                            with
+                            vigorous force.
+                        </p>
+
+                        <div class="image">
+                            <img src="./images/squirtle.jpg" alt="">
+                        </div>
+                    </div>
+                    <div class="options">
+                        <input type="radio" name="question17" id="squirtle" value="squirtle">
+                        <label for="squirtle">Squirtle</label>
+
+                        <input type="radio" name="question17" id="cloyster" value="cloyster">
+                        <label for="cloyster">Cloyster</label>
+
+                        <input type="radio" name="question17" id="dewgong" value="dewgong">
+                        <label for="dewgong">Dewgong</label>
+                    </div>
+                </form>
+                <form action="" class="page">
+                    <div class="question">
+                        <p class="entry">18. Its four ruggedly developed arms can launch a flurry of 1,000 punches
+                            in
+                            just two seconds.
+                        </p>
+
+                        <div class="image">
+                            <img src="./images/machamp.jpg" alt="">
+                        </div>
+                    </div>
+                    <div class="options">
+                        <input type="radio" name="question18" id="golem" value="golem">
+                        <label for="golem">Golem</label>
+
+                        <input type="radio" name="question18" id="machamp" value="machamp">
+                        <label for="machamp">Machamp</label>
+
+                        <input type="radio" name="question18" id="pinsir" value="pinsir">
+                        <label for="pinsir">Pinsir</label>
+                    </div>
+                </form>
+                <form action="" class="page">
+                    <div class="question">
+                        <p class="entry">19. It is virtually worthless in terms of both power and speed. It is the
+                            most
+                            weak and pathetic Pokémon in the world.
+                        </p>
+
+                        <div class="image">
+                            <img src="./images/magikarp.png" alt="">
+                        </div>
+                    </div>
+                    <div class="options">
+                        <input type="radio" name="question19" id="magikarp" value="magikarp">
+                        <label for="magikarp">Magikarp</label>
+
+                        <input type="radio" name="question19" id="geodude" value="geodude">
+                        <label for="geodude">Geodude</label>
+
+                        <input type="radio" name="question19" id="staryu" value="staryu">
+                        <label for="staryu">Staryu</label>
+                    </div>
+                </form>
+                <form action="" class="page">
+                    <div class="question">
+                        <p class="entry">20. It has small electric sacs on both its cheeks. If threatened, it looses
+                            electric charges from the sacs.
+                        </p>
+
+                        <div class="image">
+                            <img src="./images/pikachu.png" alt="">
+                        </div>
+                    </div>
+                    <div class="options">
+                        <input type="radio" name="question20" id="raichu" value="raichu">
+                        <label for="raichu">Raichu</label>
+
+                        <input type="radio" name="question20" id="pikachu" value="pikachu">
+                        <label for="pikachu">Pikachu</label>
+
+                        <input type="radio" name="question20" id="mewtwo" value="mewtwo">
+                        <label for="mewtwo">Mewtwo</label>
+                    </div>
+                </form>
+                <div class="page score-page" style="text-align: center;">
+                    <h1 >Congratulations</h1>
+                    <h1>You scored : </h1>
+                    <p id="result" class="score"></p>
+                </div>
+            </div>
+
+            <div id="results" class="results results-show">
+
+                <ol id="yourAns">
+                    <p class="entry">Your Answers :</p>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                </ol>
+
+                <ol>
+                    <p class="entry">Correct Answers :</p>
+                    <li>Charmender <img src="./images/alakazam.png" alt=""></li>
+                    <li>Oddish <img src="./images/oddish.png" alt=""></li>
+                    <li>Eevee <img src="./images/eevee.png" alt=""></li>
+                    <li>Magnemite <img src="./images/magnemite.png" alt=""></li>
+                    <li>Gengar <img src="./images/gengar.png" alt=""></li>
+                    <li>Alakazam <img src="./images/alakazam.png" alt=""></li>
+                    <li>Clefairy <img src="./images/clefairy.jpg" alt=""></li>
+                    <li>Lapras <img src="./images/lapras.png" alt=""></li>
+                    <li>Charizard <img src="./images/charizard.webp" alt=""></li>
+                    <li>Zapdos <img src="./images/zapdos.png" alt=""></li>
+                    <li>Meowth <img src="./images/meowth.jpg" alt=""></li>
+                    <li>Arbok <img src="./images/arbok.png" alt=""></li>
+                    <li>Ivysaur <img src="./images/ivysaur.jpg" alt=""></li>
+                    <li>Pidgeot <img src="./images/pidgeot.png" alt=""></li>
+                    <li>Diglett <img src="./images/diglett.png" alt=""></li>
+                    <li>Metapod <img src="./images/metapod.jpg" alt=""></li>
+                    <li>Squirtle <img src="./images/squirtle.jpg" alt=""></li>
+                    <li>Machamp <img src="./images/machamp.jpg" alt=""></li>
+                    <li>Magikarp <img src="./images/magikarp.png" alt=""></li>
+                    <li>Pikachu <img src="./images/pikachu.png" alt=""></li>
+                </ol>
+
+            </div>
+            <div class="btn_section">
+
+                <button onclick="return nextPrev(-1);" id="prevBtn">Previous</button>
+                <button onclick="return nextPrev(1);" id="nextBtn" class="nextBtn">Start Quiz</button>
+                <button id="homePage" class="homePageBtn"><a href="index.html">Go to home page</a></button>
+
+            </div>
+        </div>
+
+    </main>
+
+    <footer>copyright &copy; Pokemon.com</footer>
+    <script src=".\script.js"></script>
+</body>
+
+</html>
