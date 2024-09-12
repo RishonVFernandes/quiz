@@ -145,6 +145,7 @@ input[type="radio"]:checked+label {
 .entry {
     font-size: 2rem;
     font-weight: 700;
+    text-wrap: balance;
 }
 
 
@@ -201,6 +202,66 @@ footer{
     /* background-color: red; */
     width: 100%;
 
+}
+
+/* pokeball */
+.pokeball{
+    width:100px;
+    height:100px;
+    /* background-color: green; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+
+    animation: rotate 3s infinite linear;
+}
+.top{
+    background-color: red;
+    height: 50%;
+    width: 100%;
+    border-radius: 1000px 1000px 0 0;
+    border-bottom: 5px solid black;
+}
+.bottom{
+    background-color: white;
+    height: 50%;
+    width: 100%;
+
+    border-radius:0 0 1000px 1000px;
+    border-top: 5px solid black;
+
+}
+/* .line{
+    border-block:2px solid black
+    width:100%;
+} */
+.small-ball{
+    border: 4px solid black;
+    width: 20%;
+
+    height: 20%;
+    border-radius: 50%;
+    display: grid;
+    place-content: center;
+    position: absolute;
+    background-color: white;
+}
+.small-inside-ball{
+    border: 2px solid black;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+}
+
+@keyframes rotate {
+    from{
+        transform: rotate(-360deg);
+    }
+    to{
+        transform: rotate(360deg);
+    }
 }
 @media screen and (max-width:412px) {
     
