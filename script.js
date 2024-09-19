@@ -157,3 +157,12 @@ function typeWriter() {
 //     setTimeout(typeWriter, speed);
 //   }
 // }
+
+//spin pokeball;
+
+
+function rotatePokeball(e){
+
+        e.classList.toggle('rotateBall');
+    
+}

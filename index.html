@@ -7,6 +7,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>May I Choose You ? - Pokemon Quiz Website</title>
     <link rel="stylesheet" href=".\styles.css">
+    <script src=".\script.js" defer></script>
+
 </head>
 
 
@@ -15,7 +17,7 @@
     <main>
         
         <div class="heading">
-            <div class="pokeball">
+            <div class="pokeball" id="pokeball1" onclick="return rotatePokeball(this);">
                 <div class="top"></div>
                     <div class="small-ball">
                         <div class="small-inside-ball"></div>
@@ -28,6 +30,14 @@
                     <div style="display:inline" id="heading"></div>
                 <img src="./images/hitmonchan.png" class="hitmonchanImg headImg" alt="">
             </a>
+            <div class="pokeball" id="pokeball2"  onclick="return rotatePokeball(this);">
+                <div class="top"></div>
+                    <div class="small-ball">
+                        <div class="small-inside-ball"></div>
+                    </div>
+                
+                <div class="bottom"></div>
+            </div>
             
         </div>
         <div class="quiz_interface">
@@ -537,7 +547,6 @@
     </main>
 
     <footer>copyright &copy; Pokemon.com</footer>
-    <script src=".\script.js"></script>
 </body>
 
 </html>

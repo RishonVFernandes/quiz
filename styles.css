@@ -1,8 +1,8 @@
-:root{
-    --font-color:black;
-    --btn-color:#821131;
-    --label-color:#f1c08c;
-    --label-bg-color:#C7253E;
+:root {
+    --font-color: black;
+    --btn-color: #821131;
+    --label-color: #f1c08c;
+    --label-bg-color: #C7253E;
 }
 
 body {
@@ -19,20 +19,23 @@ body {
 
 
 .heading {
+    height: 175px;
     font-size: 3rem;
-    font-weight: 500;
     text-align: center;
-font-weight: 600;
-    margin: 0;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
 }
 
-.heading > a{
+.heading>a {
     color: black;
+    width: 60vw;
 }
 
 .quiz_interface {
     padding-top: 40px;
-    width:70vw;
+    width: 70vw;
     height: 70vh;
     display: flex;
     flex-direction: column;
@@ -55,7 +58,7 @@ font-weight: 600;
     display: none;
 }
 
-.score-page{
+.score-page {
     width: 100%
 }
 
@@ -67,7 +70,7 @@ font-weight: 600;
     gap: 20px;
 }
 
-a{
+a {
     color: #f1c08c;
     text-decoration: none;
 }
@@ -90,9 +93,10 @@ label {
     display: grid;
     place-content: center;
     border: 1px inset black;
-    font-family:monospace;
+    font-family: monospace;
+    box-shadow: 5px 5px #821131;
 
-    &:hover{
+    &:hover {
         background-color: #f3d4b4;
     }
 }
@@ -101,7 +105,7 @@ input[type="radio"]:checked+label {
     background-color: var(--label-bg-color);
     color: var(--label-color);
 
-    &:hover{
+    &:hover {
         color: #f3d4b4;
     }
 
@@ -119,6 +123,7 @@ input[type="radio"]:checked+label {
     width: 200px;
     height: 200px;
     background-color: red;
+    box-shadow: 5px 5px #821131;
 }
 
 .options {
@@ -137,7 +142,7 @@ input[type="radio"]:checked+label {
     width: 500px;
 }
 
-.hide{
+.hide {
     visibility: hidden;
 }
 
@@ -159,55 +164,63 @@ button {
     font-size: 30px;
     cursor: pointer;
     font-family: cursive;
+
+    &:hover {
+        background-color: #b91b47;
+    }
 }
 
-.results{
+.results {
     display: none;
 }
 
-.results > ol > li{
+.results>ol>li {
     height: 30px;
     margin-left: 10px;
 }
-.results > ol > li > img{
+
+.results>ol>li>img {
     width: 20px;
     height: auto;
     margin: auto;
 }
 
-.homePageBtn{
-    width:200px;
+.homePageBtn {
+    width: 200px;
 }
-.score{
+
+.score {
     font-size: 25px;
     font-weight: 900;
     text-align: center;
 }
 
 
-.headImg{
+.headImg {
     width: 3rem;
-    
+
 }
-.hitmonchanImg{
+
+.hitmonchanImg {
     margin-left: 40px;
 }
-.mewImg{
+
+.mewImg {
     width: 4.5rem;
     margin-right: 40px;
 }
 
 
-footer{
+footer {
     /* background-color: red; */
     width: 100%;
 
 }
 
 /* pokeball */
-.pokeball{
-    width:100px;
-    height:100px;
+.pokeball {
+    width: 100px;
+    height: 100px;
     /* background-color: green; */
     display: flex;
     flex-direction: column;
@@ -215,30 +228,43 @@ footer{
     align-items: center;
     position: relative;
 
-    animation: rotate 3s infinite linear;
+    /* animation: rotate 3s  linear; */
+
+
 }
-.top{
+
+.rotateBall {
+    animation-name: rotate;
+    animation-duration: 2s;
+    animation-timing-function: ease-out;
+    animation-direction: linear;
+    animation-iteration-count: 1;
+}
+
+.top {
     background-color: red;
     height: 50%;
     width: 100%;
     border-radius: 1000px 1000px 0 0;
-    border-bottom: 5px solid black;
+    border-bottom: .27rem solid black;
 }
-.bottom{
+
+.bottom {
     background-color: white;
     height: 50%;
     width: 100%;
 
-    border-radius:0 0 1000px 1000px;
-    border-top: 5px solid black;
+    border-radius: 0 0 1000px 1000px;
+    border-top: .27rem solid black;
 
 }
+
 /* .line{
     border-block:2px solid black
     width:100%;
 } */
-.small-ball{
-    border: 4px solid black;
+.small-ball {
+    border: .26rem solid black;
     width: 20%;
 
     height: 20%;
@@ -248,83 +274,118 @@ footer{
     position: absolute;
     background-color: white;
 }
-.small-inside-ball{
-    border: 2px solid black;
-    width: 15px;
-    height: 15px;
+
+.small-inside-ball {
+    border: .1rem solid black;
+    width: 1rem;
+    height: 1rem;
     border-radius: 50%;
 }
 
 @keyframes rotate {
-    from{
+    from {
         transform: rotate(-360deg);
     }
-    to{
+
+    to {
         transform: rotate(360deg);
     }
 }
+
 @media screen and (max-width:412px) {
-    
-    body{
+
+    body {
         background-position: left;
     }
-    .heading{
+
+    .heading {
+        margin-top: 2rem;
         font-size: 2rem;
+        font-weight: 300;
+        display: flex;
+        min-height: 250px;
+        height: 176.576px;
+        flex-direction: column;
     }
 
-    
-    .quiz_interface{
+
+    .quiz_interface {
         align-items: center;
         height: 100vh;
     }
-    .question{
+
+    .question {
         display: block;
         justify-content: center;
     }
-    .entry{
-        font-size:16px;
+
+    .entry {
+        font-size: 16px;
+        text-wrap: balance;
+        text-align: center;
     }
 
-    .image>img{
+    .image>img {
         width: 150px;
         height: auto;
         margin-block: 30px;
     }
-    .image{
+
+    .image {
         display: flex;
         justify-content: center;
+        height: 200px;
     }
-    .options{
+
+
+    .options {
         margin-bottom: 30px;
     }
-    label{
+
+    label {
         width: 200px;
         height: 25px;
         font-size: 20px;
     }
 
-    button{
+    button {
         width: 180px;
         height: 35px;
-    
+
         font-size: 1rem;
     }
-    .btn_section{
+
+    .btn_section {
         /* width: 400px; */
         flex-direction: column;
-        gap:15px;
+        gap: 15px;
     }
 
-    
-    .headImg{
+
+    .headImg {
         width: 1rem;
         margin: 0;
     }
-    .mewImg{
+
+    .mewImg {
         width: 1.5rem;
     }
 
-    .page > li:nth-child(7){
+    .page>li:nth-child(7) {
         margin-bottom: 100px;
+    }
+
+    .pokeball {
+        width: 30px;
+        height: 30px;
+    }
+
+    .top,
+    .bottom {
+        border-width: .01rem;
+    }
+
+    .small-inside-ball {
+        display: none;
     }
 }
