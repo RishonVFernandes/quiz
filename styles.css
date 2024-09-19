@@ -6,7 +6,7 @@
 }
 
 body {
-    background-image: url("backgroundPikachu.jpg");
+    background-image: url("./images/backgroundPikachu.jpg");
     background-color: rgb(255, 196, 0);
     background-position: center;
     background-repeat: no-repeat;
