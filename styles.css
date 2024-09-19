@@ -7,7 +7,7 @@
 
 body {
     background-image: url("./images/backgroundPikachu.jpg");
-    background-color: rgb(255, 196, 0);
+    background-color: rgb(255 148 0);
     background-position: center;
     background-repeat: no-repeat;
     color: var(--font-color);
@@ -163,7 +163,7 @@ button {
     height: 60px;
     font-size: 30px;
     cursor: pointer;
-    font-family: cursive;
+    font-family:cursive;
 
     &:hover {
         background-color: #b91b47;
@@ -346,6 +346,7 @@ footer {
         width: 200px;
         height: 25px;
         font-size: 20px;
+        margin-bottom: 13px;
     }
 
     button {
